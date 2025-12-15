@@ -1,3 +1,5 @@
+import DarkModeButton from "./DarkModeButton";
+
 export default function Header() {
   return (
     <header className="bg-black h-17 flex items-center tracking-wide">
@@ -5,7 +7,7 @@ export default function Header() {
       <a href="/" className="font-bbh text-white ml-12 hover:text-red-500 transition-colors duration-300 flex items-center gap-5">
         <img src="../src/assets/logo/jaijai-logo.png" alt="my website logo" className="h-8"/>
 
-        <span>JAIJAI WEBSITE</span>
+        <span>JAIJAI - WEBSITE</span>
       </a>
 
       {/* navigation */}
@@ -18,6 +20,7 @@ export default function Header() {
       </nav>
 
       {/* dark mode button */}
+      <DarkModeButton />
     </header>
   );
 }
