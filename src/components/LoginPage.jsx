@@ -4,9 +4,10 @@ import Header from "./Header";
 
 export default function LoginPage(){
     return(
-        <div>
+        <div className="flex flex-col min-h-screen">
             <Header />
-            <div className="flex flex-1 items-center justify-center">
+            {/* login-box */}
+            <div className="flex flex-grow items-center justify-center">
                 <div className="flex flex-col border border-black-100 rounded-sm px-15 py-20">
                     <Input
                     type="email"
